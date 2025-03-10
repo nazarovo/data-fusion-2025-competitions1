@@ -33,3 +33,13 @@ Data Fusion Contest 2025 - <a href='https://ods.ai/competitions/data-fusion2025-
 unlabeled = pl.read_parquet("unlabeled_train.parquet").rename({"source_name":"name"})<br>
 lst=["cd)","lp)","sp)","ep)"]<br>
 unlabeled.filter(pl.col("name").str.to_lowercase().str.contains_any(lst))
+
+==============================================
+==============================================
+<h2>Результаты доразметки</h2>
+
+<h3>Совсем дополнительная разметка от LLM</h3>
+"dirty new items*.parquet" - Грязный вариант, но многократность генерации, возможно, дает антигаллюционный эффект.
+
+<h3>Доразметка из unlabeled</h3>
+Нетути. Йок (на тюркский языках означает «нет» в значении отсутствия).
