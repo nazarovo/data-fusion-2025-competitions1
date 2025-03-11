@@ -34,6 +34,17 @@ unlabeled = pl.read_parquet("unlabeled_train.parquet").rename({"source_name":"na
 lst=["cd)","lp)","sp)","ep)"]<br>
 unlabeled.filter(pl.col("name").str.to_lowercase().str.contains_any(lst))
 
+====================
+
+dirty new items4?.parquet - дополнение для категорий 4 уровня<br>
+dirty new items3?.parquet - дополнение для категорий 3 уровня<br>
+dirty new items2?.parquet - дополнение для категорий 2 уровня<br>
+
+====================
+
+0007.ipynb - заход на аттрибуты
+
+
 =======================================
 =======================================
 <h2>Результаты доразметки (предварительные)</h2>
